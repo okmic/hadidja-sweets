@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.sad{
+  color: #fff;
+  font-size: 300px;
+}
+img {
+  max-width: 300px;
+}
+
+.color1 {color: #120907;}
+.color2 {color: #3e220b;}
+.color3 {color: #785627;}
+.color4 {color: #b68f4a;}
+.color5 {color: #f0d46c;}
+.color6 {color: #58add4;}
