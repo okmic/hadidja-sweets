@@ -1,35 +1,27 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Header from './components/Header/Header';
-import Navbar from './components/navBar/Navbar';
+import { HashRouter , Route, Routes } from 'react-router-dom'
 import { connect } from 'react-redux';
-import Products from './components/Products/Products';
-import Contact from './components/Contact/Contact';
+import Home from './Screens/Home';
+import Contacts from './components/Contacts/Contacts';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollToTopAnimate from './components/ScrollToTop/ScrollToTopAnimate';
 
 
-
-
-
-
-/* import Lesson from './components/modal/Modal'; */
-
-
-
-function App(props) {
-  return (
-    <BrowserRouter>
+const App = (props) => <HashRouter >
+        <ScrollToTop />
+        <ScrollToTopAnimate />
         <div className="App">
-      <Header screen ={props.hadidjaReducer.screen} />
-      <Navbar />
       <Routes>
-        <Route path="/213" element={<div className="sad">fdsfdsfds</div>} />
+        <Route path="/"  element={
+        <Home 
+          screen={props.hadidjaReducer.screen}
+          products={props.hadidjaReducer.products}
+          />} />
+        <Route path="/Contacts"  element={<Contacts />} />
+        <Route path="/*"  element={<div>404 NOT FOUND</div>} />
       </Routes>
-      <Products products={props.hadidjaReducer.products} />
-      <Contact />
       </div>
-    </BrowserRouter>
-  );
-}
+    </HashRouter >
 
 const mapStateToProps = (state) => {
   return{

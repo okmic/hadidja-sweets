@@ -74,3 +74,10 @@ height: 100%;
 width: 100%;
 z-index: 11;
 `
+
+export const Hadidja = styled.div`
+max-height: 15vh;
+& img {
+  max-height: 15vh;
+};
+`

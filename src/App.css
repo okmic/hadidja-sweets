@@ -1,14 +1,16 @@
 .App {
   text-align: center;
   font-size: calc(10px + 2vmin);
+  max-width: 100vw;
 }
 
 .sad{
   color: #fff;
   font-size: 300px;
 }
-img {
-  max-width: 300px;
+
+li {
+  list-style-type: none;
 }
 
 .color1 {color: #120907;}

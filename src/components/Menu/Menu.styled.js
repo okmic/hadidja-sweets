@@ -11,7 +11,7 @@ z-index: 1000;
 border-bottom: 1px solid #120907;
 `
  
-export const Menu = styled.div`
+export const MenuDiv = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;

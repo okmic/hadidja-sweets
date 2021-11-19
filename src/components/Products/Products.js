@@ -12,7 +12,9 @@ const Products = ({products}) =>
             <h5>{item.description}</h5>
             <h2>{item.price} &#8381;</h2>
             </ProductDescription>
-            <ProductButton value="В корзину" type="submit"/>
+            <ProductButton>
+                <p>В корзину</p>
+            </ProductButton>
         </Product>)}
     </WrapperProducts>
 

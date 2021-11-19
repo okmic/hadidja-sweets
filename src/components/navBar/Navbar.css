@@ -1,0 +1,70 @@
+.navbar {
+  background-image: url(../img/logoheader.jpg);
+  background-color: rgb(	150, 75, 0);
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 60px;
+  display: flex;
+  justify-content: flex-flex-start;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu-bars {
+  margin-left: 15px;
+  font-size: 40px;
+  background: none;
+}
+
+.nav-menu {
+  background-image: url(../img/logoheader.jpg);
+  background-color: rgb(	150, 75, 0);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  border-right: 1px solid #89b3e4;
+  width: 170px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.links__container_header{
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  margin: 15px 0 15px -30px;
+}
+
+.links__container_header:hover{color:#89b3e4; transition: 1s;}
+
+.links__icon_header{
+  font-size: 30px;
+}
+.links__description_header{
+  font-size: 15px;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: rgb(	150, 75, 0);
+  width: 30px;
+  height: 80px;
+  margin-left: -15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+a.activeLink{color:#89b3e4; font-weight: 900;}
+span {
+  margin-left: 15px;
+}

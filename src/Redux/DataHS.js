@@ -1,6 +1,9 @@
-//logo
+//Home screen
 import crown from '../img/crown.png'
 import hadidja from '../img/hadidja.png'
+import v1 from '../video/VID_1.mp4';
+import v2 from '../video/VID_2.mp4';
+import v3 from '../video/VID_3.mp4';
 //products
 import img_1 from '../img/img_1.jpg'
 import img_2 from '../img/img_2.jpg'
@@ -29,7 +32,10 @@ import img_21 from '../img/img_21.jpg'
 export const initialState = {
     screen: {
         crown: crown,
-        hadidja: hadidja
+        hadidja: hadidja,
+        v1: v1,
+        v2: v2,
+        v3: v3
     },
     products: [
         {
