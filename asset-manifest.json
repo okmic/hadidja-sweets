@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/hadidja-sweets/static/css/main.e313632f.chunk.css",
-    "main.js": "/hadidja-sweets/static/js/main.7ab64cc1.chunk.js",
-    "main.js.map": "/hadidja-sweets/static/js/main.7ab64cc1.chunk.js.map",
-    "runtime-main.js": "/hadidja-sweets/static/js/runtime-main.978fa996.js",
-    "runtime-main.js.map": "/hadidja-sweets/static/js/runtime-main.978fa996.js.map",
-    "static/js/2.558b716b.chunk.js": "/hadidja-sweets/static/js/2.558b716b.chunk.js",
-    "static/js/2.558b716b.chunk.js.map": "/hadidja-sweets/static/js/2.558b716b.chunk.js.map",
-    "static/js/3.b44c66d3.chunk.js": "/hadidja-sweets/static/js/3.b44c66d3.chunk.js",
-    "static/js/3.b44c66d3.chunk.js.map": "/hadidja-sweets/static/js/3.b44c66d3.chunk.js.map",
+    "main.css": "/hadidja-sweets/static/css/main.f90d14d9.chunk.css",
+    "main.js": "/hadidja-sweets/static/js/main.fbc81e19.chunk.js",
+    "main.js.map": "/hadidja-sweets/static/js/main.fbc81e19.chunk.js.map",
+    "runtime-main.js": "/hadidja-sweets/static/js/runtime-main.80a0765c.js",
+    "runtime-main.js.map": "/hadidja-sweets/static/js/runtime-main.80a0765c.js.map",
+    "static/js/2.11860ad1.chunk.js": "/hadidja-sweets/static/js/2.11860ad1.chunk.js",
+    "static/js/2.11860ad1.chunk.js.map": "/hadidja-sweets/static/js/2.11860ad1.chunk.js.map",
+    "static/js/3.747dce85.chunk.js": "/hadidja-sweets/static/js/3.747dce85.chunk.js",
+    "static/js/3.747dce85.chunk.js.map": "/hadidja-sweets/static/js/3.747dce85.chunk.js.map",
     "index.html": "/hadidja-sweets/index.html",
-    "static/css/main.e313632f.chunk.css.map": "/hadidja-sweets/static/css/main.e313632f.chunk.css.map",
-    "static/js/2.558b716b.chunk.js.LICENSE.txt": "/hadidja-sweets/static/js/2.558b716b.chunk.js.LICENSE.txt",
+    "static/css/main.f90d14d9.chunk.css.map": "/hadidja-sweets/static/css/main.f90d14d9.chunk.css.map",
+    "static/js/2.11860ad1.chunk.js.LICENSE.txt": "/hadidja-sweets/static/js/2.11860ad1.chunk.js.LICENSE.txt",
     "static/media/VID_1.c87cd685.mp4": "/hadidja-sweets/static/media/VID_1.c87cd685.mp4",
     "static/media/VID_2.5a9f2450.mp4": "/hadidja-sweets/static/media/VID_2.5a9f2450.mp4",
     "static/media/VID_3.acb3071b.mp4": "/hadidja-sweets/static/media/VID_3.acb3071b.mp4",
-    "static/media/bag_red.a382719c.jpg": "/hadidja-sweets/static/media/bag_red.a382719c.jpg",
     "static/media/crown.d744452a.png": "/hadidja-sweets/static/media/crown.d744452a.png",
     "static/media/hadidja.6edab65b.png": "/hadidja-sweets/static/media/hadidja.6edab65b.png",
     "static/media/img_1.39833493.jpg": "/hadidja-sweets/static/media/img_1.39833493.jpg",
@@ -41,9 +40,9 @@
     "static/media/img_9.8be6c529.jpg": "/hadidja-sweets/static/media/img_9.8be6c529.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.978fa996.js",
-    "static/js/2.558b716b.chunk.js",
-    "static/css/main.e313632f.chunk.css",
-    "static/js/main.7ab64cc1.chunk.js"
+    "static/js/runtime-main.80a0765c.js",
+    "static/js/2.11860ad1.chunk.js",
+    "static/css/main.f90d14d9.chunk.css",
+    "static/js/main.fbc81e19.chunk.js"
   ]
 }
