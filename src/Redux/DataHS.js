@@ -37,174 +37,218 @@ export const initialState = {
         v2: v2,
         v3: v3
     },
+    cartItems: [
+    ],
     products: [
         {
             id: 1,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_1,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 2,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_2,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 3,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_3,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 4,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_4,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 5,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_5,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 6,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_6,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 7,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_7,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 8,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_8,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 9,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_9,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 10,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_10,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 11,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_11,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 12,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_12,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 13,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_13,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 14,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_14,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 15,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_15,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 16,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_16,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 17,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_17,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 18,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_18,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 19,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_19,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 20,
+            amount : 1,
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_20,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         },
         {
             id: 21,
-            category: "Lorem ipsum dolor",
+            amount : 1,
+            category: "Lorem ipsum dolor", 
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_21,
             price: 300,
-            title: "Lorem ipsum dolor"
+            title: "Lorem ipsum dolor",
+            buttonActive: false
         }
     ]
 }

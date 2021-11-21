@@ -39,7 +39,7 @@ const ScrollToTopAnimate = () => {
 
     return (
         <Wrapper onClick={scrollToTop}        >
-            <BsFillArrowUpCircleFill size="35" color="#000" />
+            <BsFillArrowUpCircleFill size="35" color="#58add4" />
         </Wrapper>
     );
 };

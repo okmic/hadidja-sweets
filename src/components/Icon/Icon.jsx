@@ -5,7 +5,7 @@ export const IconWrapper  = styled.div`
 max-height: 30px
 `
 
- let Icon = ({IconR, body, color, size, a, tel, nav}) => {
+ let Icon = ({IconR, body, color, size, a, tel, nav, showSidebar}) => {
 
     const target = !tel ? "_blank" : "_self"  
 
@@ -16,7 +16,7 @@ max-height: 30px
                   <IconR size={size ? size : 30} color={color ? color : "#D1BC8A"} />
                   {body ? body : ""}
             </NavLink>
-          : <a href={a} target={target} >          
+          : <a href={a} target={target}  onClick={showSidebar ? showSidebar : null}>          
                 <IconR size={size ? size : 30} color={color ? color : "#D1BC8A"} />
                 {body ? body : ""}
             </a>
