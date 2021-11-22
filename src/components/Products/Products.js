@@ -1,13 +1,7 @@
 import { Product, ProductButton, ProductDescription, ProductImg, WrapperProducts } from "./Products.styled"
+import {BsCartCheckFill} from 'react-icons/bs'
 
-
-const Products = ({products, onClickButtonProduct}) => {
-
-    const addProduct = (id, image, title, price, amount, buttonActive) => {
-        onClickButtonProduct(id, image, title, price, amount, buttonActive)
-    }
-
-return <WrapperProducts>
+const Products = ({products, onClickButtonProduct}) =>  <WrapperProducts>
         {products && products.map(item => <Product key={item.id}>
             <ProductImg>
             <img src={item.image} alt={item.image} />
@@ -18,16 +12,16 @@ return <WrapperProducts>
             <h2>{item.price} &#8381;</h2>
             </ProductDescription>
             {!item.buttonActive
-            ?   <ProductButton onClick={() => addProduct(item.id, item.image, item.title, item.price, item.amount, item.buttonActive)}>
-            <p>В корзину </p>
+            ?   <ProductButton onClick={() => onClickButtonProduct(item.id, item.image, item.title, item.price, item.amount, item.buttonActive)}>
+                    <p>В корзину </p>
             </ProductButton>
-            :   <ProductButton >
-            <p>В корзине</p>
+            :   <ProductButton activeButton={true} >
+                    <BsCartCheckFill />
             </ProductButton>
             }
             
         </Product>)
         }
     </WrapperProducts>
-}
+
 export default Products

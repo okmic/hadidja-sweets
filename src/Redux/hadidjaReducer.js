@@ -60,12 +60,6 @@ export const addBasket = (id) => ({type: ADD_BASKET, id})
 export const removeBasket = (id) => ({type: REMOVE_BASKET, id})
 export const deleteBasket = (id) => ({type: DELETE_BASKET, id})
 
-/* export const removeBasket = (id) => (dispatch) => {
-    if(id < 1) {alert("0")}
-    dispatch(removeBasketAC(id));
-}
- */
-
 
 
 export default canvasReduser

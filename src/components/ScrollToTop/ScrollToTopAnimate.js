@@ -5,13 +5,21 @@ import {BsFillArrowUpCircleFill} from "react-icons/bs"
 
 const Wrapper = styled.div`
 position: fixed;
-bottom: 79px;
+bottom: 11%;
 right: 5%;
 width: 35px;
 height: 35px;
 cursor: pointer;
+background-color: #3e220b;
+border-radius: 50%;
+color: #fff;
+transition: 0.3s;
 z-index: 1;
 animation: scrollToTop 1s 1 forwards;
+&:hover {
+    color: green;
+    transition: 0.3s;
+}
 @keyframes scrollToTop {
     0%{transform: translateX(70px);}
     100%{transform: translateX(0px);}
@@ -39,7 +47,7 @@ const ScrollToTopAnimate = () => {
 
     return (
         <Wrapper onClick={scrollToTop}        >
-            <BsFillArrowUpCircleFill size="35" color="#58add4" />
+            <BsFillArrowUpCircleFill size="35"  />
         </Wrapper>
     );
 };

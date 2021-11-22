@@ -43,17 +43,18 @@ export const ProductDescription = styled.div`
 export const ProductButton = styled.div`
  width: 100%;
  height: 50px;
- font-size: 19px;
+ font-size:  ${props => props.activeButton ? "30px" : "23px"};
  cursor: pointer;
  transition: 0.5s;
- background-color: #bbbbbb;
- color: black;
+ background-color: ${props => props.activeButton ? "green" : "#bbbbbb"};
+ color:${props => props.activeButton ? "#fff" : "#000"};;
  display: flex;
  align-items: center;
  justify-content: center;
-
+ transition: 1s;
 &:hover {
-    background-color: #58add4;
+    background-color: green;
     transition: 0.3s;
+    transition: 0.5s;
 }
 `

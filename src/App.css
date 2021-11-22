@@ -12,6 +12,9 @@
 li {
   list-style-type: none;
 }
+button, a {
+  cursor: pointer;
+}
 
 .color1 {color: #120907;}
 .color2 {color: #3e220b;}

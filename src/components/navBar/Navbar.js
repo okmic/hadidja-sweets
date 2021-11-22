@@ -1,38 +1,33 @@
-import { useState } from 'react';
 import {AiFillCloseCircle} from 'react-icons/ai';
-import { Link} from 'react-router-dom';
-import './Navbar.css';
 import Menu from '../Menu/Menu';
 import Basket from '../Basket/Basket';
+import { ItemNav, Toggle, ToggleItem, WrapperNav } from './Navbar.styled';
+import Icon from '../Icon/Icon';
 
-
-function Navbar({cartItems, onAddedBasket, onRemoveBasket}) {
-  const calculateTotal = () =>
-  cartItems.reduce((ack, item) => ack + item.amount * item.price, 0);
-
-  const [sidebar, setSidebar] = useState(false);
-  const showSidebar = () => setSidebar(!sidebar);
-
-  return (
-    <>
-      <Menu showSidebar={showSidebar} />
-      <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-        <ul className='nav-menu-items' >
-          <li className='navbar-toggle'>
-            <Link to='#' className='menu-bars' onClick={showSidebar}>
-              <AiFillCloseCircle color="#58add4" />
-            </Link>
-          </li>
+const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sidebar, showSidebar}) => <>
+      <Menu 
+      showSidebar={showSidebar}
+      items={cartItems.length} 
+      />
+      <WrapperNav active={sidebar}>
+        <ItemNav>
+          <Toggle>
+            <ToggleItem onClick={showSidebar}>
+              <Icon 
+              IconR={AiFillCloseCircle}
+              color="#000"
+              colorHover="#3e220b"
+              />
+            </ToggleItem>
+          </Toggle>
           <Basket 
           cartItems={cartItems} 
           onAddedBasket={onAddedBasket}
           onRemoveBasket={onRemoveBasket}
           calculateTotal={calculateTotal}
           />
-        </ul>
-      </nav>
+        </ItemNav>
+      </WrapperNav>
     </>
-  );
-}
 
 export default Navbar;

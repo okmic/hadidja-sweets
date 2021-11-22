@@ -20,3 +20,23 @@ export const MenuDiv = styled.div`
     padding: 0 5vw;
   }
 `
+export const Basket = styled.div`
+position: relative;
+`
+export const IconBasket = styled.b`
+position: absolute;
+top: -5px;
+left: 7.5px;
+color: #fff;
+font-size: 11px;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+text-align: center;
+background-color: red;
+animation: basket 0.7s 1 forwards;
+@keyframes basket {
+  0%{transform: translateY(-15px);}
+  100%{transform: translateY(0);}
+}
+`
