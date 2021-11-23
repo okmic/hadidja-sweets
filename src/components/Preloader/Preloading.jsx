@@ -1,7 +1,7 @@
 import ReactLoading from 'react-loading';
 import { PreloadingItem, WrapperPreloading } from './Preloading.styled';
 
-let Preloading = ({crown}) => <WrapperPreloading>
+let Preloading = ({crown, active}) => <WrapperPreloading active={active}>
             <PreloadingItem>
                 <img src={crown} alt={crown} />
                 <PreloadingItem>

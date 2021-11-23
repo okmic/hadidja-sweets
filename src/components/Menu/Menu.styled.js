@@ -7,7 +7,6 @@ display: flex;
 position: sticky;
 align-items: center;
 top: 0;
-z-index: 1000;
 border-bottom: 1px solid #120907;
 `
  

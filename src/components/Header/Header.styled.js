@@ -16,9 +16,6 @@ padding-top: 5px;
 & img {
   max-height: 15vh;
 }
-@media screen and (max-width: 750px){
-    margin-left: 3vw;
-}
 `
 export const WrapperVideo = styled.div`
 display: flex;

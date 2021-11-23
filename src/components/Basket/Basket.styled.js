@@ -14,6 +14,7 @@ export const Title = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 1em;
 `
 export const Item = styled.div`
 display: flex;

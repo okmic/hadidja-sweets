@@ -6,7 +6,7 @@ import {BsFillArrowUpCircleFill} from "react-icons/bs"
 const Wrapper = styled.div`
 position: fixed;
 bottom: 11%;
-right: 5%;
+left: 5%;
 width: 35px;
 height: 35px;
 cursor: pointer;
@@ -21,7 +21,7 @@ animation: scrollToTop 1s 1 forwards;
     transition: 0.3s;
 }
 @keyframes scrollToTop {
-    0%{transform: translateX(70px);}
+    0%{transform: translateX(-70px);}
     100%{transform: translateX(0px);}
   }
 `

@@ -1,3 +1,4 @@
+
 import styled from 'styled-components'
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
@@ -21,8 +22,12 @@ animation: home 1s ease-in 2.5s 1 forwards ;
 }
 `
 
-const Home = (props) => <>
-    <Preloading crown={props.screen.crown} />
+const Home = (props) => {
+
+
+
+return <>
+    <Preloading active={props.loading} crown={props.screen.crown} />
     <Wrapper>
     <Header screen={props.screen} />
     <Navbar 
@@ -37,6 +42,7 @@ const Home = (props) => <>
     <Footer />
 </Wrapper>
 </>
+}
 
 
 export default Home

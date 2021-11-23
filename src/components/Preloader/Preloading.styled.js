@@ -5,22 +5,10 @@ position: fixed;
 width: 100%;
 height: 100%;
 background-color: rgb(22, 10, 10);
-display: flex;
+display: ${props => props.active ? "flex" : "none"};
 justify-content: center;
 align-items: center;
 z-index: 1000;
--webkit-animation: preloading 2.5s 1 forwards ;
--ms-animation: preloading 2.5s 1 forwards ;
--moz-animation: preloading 2.5s 1 forwards ;
-animation: preloading 2.5s 1 forwards ;
-@keyframes preloading {
-  90%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    }
-}
 `
 export const PreloadingItem = styled.div`
 max-height: 100%;

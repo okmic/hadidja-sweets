@@ -29,6 +29,7 @@ align-items: flex-start;
 export const Toggle = styled.li`
 position: fixed;
 top: 5px;
+z-index: 1000;
 `
 export const ToggleItem = styled.span`
 font-size: 40px;

@@ -1,4 +1,3 @@
-import './App.css'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import { connect } from 'react-redux';
 import Home from './Screens/Home';
@@ -6,9 +5,19 @@ import Contacts from './components/Contacts/Contacts';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ScrollToTopAnimate from './components/ScrollToTop/ScrollToTopAnimate';
 import { addBasket, deleteBasket, removeBasket, sendBasket } from './Redux/hadidjaReducer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { AppWrapper } from './App.styled';
+import NotFound from './components/NotFound/NotFound';
 
 const App = (props) => {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() =>{
+      setTimeout(() => {
+          setLoading(false)
+      }, 2500)
+  }, [])
 
   const onClickButtonProduct = (id, image, title, price, amount, buttonActive) => {
     props.dispatch(sendBasket(id, image, title, price, amount, buttonActive))
@@ -26,6 +35,7 @@ const App = (props) => {
     }
   }
 
+  
   const calculateTotal = () => props.hadidjaReducer.cartItems.reduce((ack, item) => ack + item.amount * item.price, 0);
 
   const [sidebar, setSidebar] = useState(false);
@@ -37,7 +47,7 @@ const App = (props) => {
  <HashRouter >
       <ScrollToTop />
       <ScrollToTopAnimate />
-      <div className="App">
+      <AppWrapper>
         <Routes>
           <Route path="/" element={
             <Home
@@ -50,11 +60,12 @@ const App = (props) => {
               calculateTotal={calculateTotal}
               sidebar={sidebar}
               showSidebar={showSidebar}
+              loading={loading}
             />} />
           <Route path="/Contacts" element={<Contacts />} />
-          <Route path="/*" element={<div>404 NOT FOUND</div>} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
-      </div>
+      </AppWrapper>
     </HashRouter >
   )
 }
