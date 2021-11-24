@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/hadidja-sweets/static/js/main.1e6a926b.chunk.js",
-    "main.js.map": "/hadidja-sweets/static/js/main.1e6a926b.chunk.js.map",
+    "main.js": "/hadidja-sweets/static/js/main.d8a8f51e.chunk.js",
+    "main.js.map": "/hadidja-sweets/static/js/main.d8a8f51e.chunk.js.map",
     "runtime-main.js": "/hadidja-sweets/static/js/runtime-main.74daa710.js",
     "runtime-main.js.map": "/hadidja-sweets/static/js/runtime-main.74daa710.js.map",
     "static/js/2.41b98851.chunk.js": "/hadidja-sweets/static/js/2.41b98851.chunk.js",
@@ -44,6 +44,6 @@
   "entrypoints": [
     "static/js/runtime-main.74daa710.js",
     "static/js/2.41b98851.chunk.js",
-    "static/js/main.1e6a926b.chunk.js"
+    "static/js/main.d8a8f51e.chunk.js"
   ]
 }
