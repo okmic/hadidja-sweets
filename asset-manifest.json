@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.js": "/hadidja-sweets/static/js/main.12b5c13c.chunk.js",
-    "main.js.map": "/hadidja-sweets/static/js/main.12b5c13c.chunk.js.map",
-    "runtime-main.js": "/hadidja-sweets/static/js/runtime-main.74daa710.js",
-    "runtime-main.js.map": "/hadidja-sweets/static/js/runtime-main.74daa710.js.map",
-    "static/js/2.41b98851.chunk.js": "/hadidja-sweets/static/js/2.41b98851.chunk.js",
-    "static/js/2.41b98851.chunk.js.map": "/hadidja-sweets/static/js/2.41b98851.chunk.js.map",
-    "static/js/3.1c20e1fc.chunk.js": "/hadidja-sweets/static/js/3.1c20e1fc.chunk.js",
-    "static/js/3.1c20e1fc.chunk.js.map": "/hadidja-sweets/static/js/3.1c20e1fc.chunk.js.map",
+    "main.css": "/hadidja-sweets/static/css/main.91ad2a22.chunk.css",
+    "main.js": "/hadidja-sweets/static/js/main.88669e89.chunk.js",
+    "main.js.map": "/hadidja-sweets/static/js/main.88669e89.chunk.js.map",
+    "runtime-main.js": "/hadidja-sweets/static/js/runtime-main.ea30e4f0.js",
+    "runtime-main.js.map": "/hadidja-sweets/static/js/runtime-main.ea30e4f0.js.map",
+    "static/js/2.b3ee7468.chunk.js": "/hadidja-sweets/static/js/2.b3ee7468.chunk.js",
+    "static/js/2.b3ee7468.chunk.js.map": "/hadidja-sweets/static/js/2.b3ee7468.chunk.js.map",
+    "static/js/3.f355510a.chunk.js": "/hadidja-sweets/static/js/3.f355510a.chunk.js",
+    "static/js/3.f355510a.chunk.js.map": "/hadidja-sweets/static/js/3.f355510a.chunk.js.map",
     "index.html": "/hadidja-sweets/index.html",
-    "static/js/2.41b98851.chunk.js.LICENSE.txt": "/hadidja-sweets/static/js/2.41b98851.chunk.js.LICENSE.txt",
+    "static/css/main.91ad2a22.chunk.css.map": "/hadidja-sweets/static/css/main.91ad2a22.chunk.css.map",
+    "static/js/2.b3ee7468.chunk.js.LICENSE.txt": "/hadidja-sweets/static/js/2.b3ee7468.chunk.js.LICENSE.txt",
     "static/media/404.af59d965.png": "/hadidja-sweets/static/media/404.af59d965.png",
     "static/media/VID_1.b9c07f45.mp4": "/hadidja-sweets/static/media/VID_1.b9c07f45.mp4",
     "static/media/VID_2.b6680f4e.mp4": "/hadidja-sweets/static/media/VID_2.b6680f4e.mp4",
@@ -42,8 +44,9 @@
     "static/media/img_vid_3.47358605.png": "/hadidja-sweets/static/media/img_vid_3.47358605.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.74daa710.js",
-    "static/js/2.41b98851.chunk.js",
-    "static/js/main.12b5c13c.chunk.js"
+    "static/js/runtime-main.ea30e4f0.js",
+    "static/js/2.b3ee7468.chunk.js",
+    "static/css/main.91ad2a22.chunk.css",
+    "static/js/main.88669e89.chunk.js"
   ]
 }
