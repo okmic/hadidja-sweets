@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     left: 0;
     margin: 0 auto;
     padding: 0;
-    font-family: cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Comic Sans MS', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    font-family: "Times New Roman", Times, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Comic Sans MS', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, cursive;
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   };
   a, button {
     cursor: pointer;
+    font-family: cursive;
   };
   li {
     list-style-type: none;

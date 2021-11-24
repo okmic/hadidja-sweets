@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperBasket = styled.div`
+position: relative;
 display: flex;
 flex-direction: column;
 color: #fff;
@@ -10,11 +11,20 @@ text-shadow: 1px 1px 1px #000;
     max-width: 150px;
 }
 `
+export const Toggle = styled.li`
+min-width: 100%;
+position: fixed;
+display: flex;
+justify-content: flex-start;
+`
+export const ToggleItem = styled.span`
+font-size: 40px;
+cursor: pointer;
+`
 export const Title = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top: 1em;
 `
 export const Item = styled.div`
 display: flex;
@@ -52,7 +62,6 @@ justify-content: space-evenly;
 export const Button = styled.button`
 background-color: ${ props => props.active === true ? "red" : "black"};
 color: #fff;
-font-style: italic;
 text-shadow: 1px 1px 1px #000;
 border-color: ${ props => props.active === true ? "red" : "#bbbbbb"};
 border-radius: 9px;
@@ -67,6 +76,7 @@ transition: 0.5s;
 export const Basement = styled.div`
 width: 100%;
 display: flex;
+color: #fff;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;

@@ -64,6 +64,8 @@ height: 65vh;
     border: #8d834b 1px solid;
 }
 `
+export const Sourse = styled.source``
+
 export const Background = styled.div`
 position: absolute;
 background-color: rgba(34, 34, 34, 0.288);

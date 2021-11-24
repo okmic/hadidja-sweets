@@ -19,11 +19,11 @@ animation: scrollToTop 1s 1 forwards;
 &:hover {
     color: green;
     transition: 0.3s;
-}
+};
 @keyframes scrollToTop {
     0%{transform: translateX(-70px);}
     100%{transform: translateX(0px);}
-  }
+  };
 `
 
 

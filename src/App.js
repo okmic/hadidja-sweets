@@ -5,19 +5,11 @@ import Contacts from './components/Contacts/Contacts';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ScrollToTopAnimate from './components/ScrollToTop/ScrollToTopAnimate';
 import { addBasket, deleteBasket, removeBasket, sendBasket } from './Redux/hadidjaReducer';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { AppWrapper } from './App.styled';
 import NotFound from './components/NotFound/NotFound';
 
 const App = (props) => {
-
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() =>{
-      setTimeout(() => {
-          setLoading(false)
-      }, 2500)
-  }, [])
 
   const onClickButtonProduct = (id, image, title, price, amount, buttonActive) => {
     props.dispatch(sendBasket(id, image, title, price, amount, buttonActive))
@@ -50,7 +42,7 @@ const App = (props) => {
       <AppWrapper>
         <Routes>
           <Route path="/" element={
-            <Home
+            <Home             
               screen={props.hadidjaReducer.screen}
               products={props.hadidjaReducer.products}
               cartItems={props.hadidjaReducer.cartItems}
@@ -60,7 +52,7 @@ const App = (props) => {
               calculateTotal={calculateTotal}
               sidebar={sidebar}
               showSidebar={showSidebar}
-              loading={loading}
+              setSidebar={setSidebar}
             />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/*" element={<NotFound />} />

@@ -12,7 +12,6 @@ export const WrapperProducts = styled.div`
 export const Product = styled.div`
     margin: 1.5em;
     max-width: 315px;
-    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-item: center;
@@ -52,6 +51,7 @@ export const ProductButton = styled.div`
  align-items: center;
  justify-content: center;
  transition: 1s;
+ font-family: cursive;
 &:hover {
     background-color: green;
     transition: 0.3s;

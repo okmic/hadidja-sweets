@@ -1,6 +1,17 @@
-import { Basement, Button, Buttons, Description, Item, Title, WrapperBasket } from "./Basket.styled"
+import Icon from "../Icon/Icon"
+import {AiFillCloseCircle} from 'react-icons/ai';
+import { Toggle, ToggleItem, Basement, Button, Buttons, Description, Item, Title, WrapperBasket } from "./Basket.styled"
 
-const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal }) => <WrapperBasket>
+const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, showSidebar }) => <WrapperBasket>
+  <Toggle>
+    <ToggleItem onClick={showSidebar}>
+      <Icon
+        IconR={AiFillCloseCircle}
+        color="#000"
+        colorHover="#3e220b"
+      />
+    </ToggleItem>
+  </Toggle>
   <Title>
     <h3>Ваша Корзина</h3>
     {cartItems.length === 0 ? <h5>В корзине нет товаров</h5> : null}
@@ -21,12 +32,12 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal }) =>
       </Buttons>
     </Item>
   ))}
-  {cartItems.length > 0 
-  ? <Basement>
-      <h6>Итого: &#8381;{calculateTotal(cartItems).toFixed(2)}</h6>
+  {cartItems.length > 0
+    ? <Basement>
+      <h5>Итого: &#8381; {calculateTotal(cartItems).toFixed(2)}</h5>
       <Button>Оформить заказ</Button>
-  </Basement>
-  : null
+    </Basement>
+    : null
   }
 
 </WrapperBasket>

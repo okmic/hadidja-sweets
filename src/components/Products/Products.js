@@ -1,7 +1,7 @@
 import { Product, ProductButton, ProductDescription, ProductImg, WrapperProducts } from "./Products.styled"
 import {BsCartCheckFill} from 'react-icons/bs'
 
-const Products = ({products, onClickButtonProduct}) =>  <WrapperProducts>
+const Products = ({products, onClickButtonProduct, showSidebar}) =>  <WrapperProducts onClick={() => showSidebar(false)}>
         {products && products.map(item => <Product key={item.id}>
             <ProductImg>
             <img src={item.image} alt={item.image} />

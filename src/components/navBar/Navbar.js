@@ -1,26 +1,17 @@
-import {AiFillCloseCircle} from 'react-icons/ai';
 import Menu from '../Menu/Menu';
 import Basket from '../Basket/Basket';
-import { ItemNav, Toggle, ToggleItem, WrapperNav } from './Navbar.styled';
-import Icon from '../Icon/Icon';
+import { ItemNav, WrapperNav } from './Navbar.styled';
 
-const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sidebar, showSidebar}) => <>
+
+const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sidebar, showSidebar, setSidebar}) => <>
       <Menu 
-      showSidebar={showSidebar}
       items={cartItems.length} 
+      showSidebar={showSidebar}
       />
       <WrapperNav active={sidebar}>
         <ItemNav>
-          <Toggle>
-            <ToggleItem onClick={showSidebar}>
-              <Icon 
-              IconR={AiFillCloseCircle}
-              color="#000"
-              colorHover="#3e220b"
-              />
-            </ToggleItem>
-          </Toggle>
           <Basket 
+          showSidebar={showSidebar}
           cartItems={cartItems} 
           onAddedBasket={onAddedBasket}
           onRemoveBasket={onRemoveBasket}

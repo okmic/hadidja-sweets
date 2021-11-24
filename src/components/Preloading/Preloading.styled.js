@@ -23,18 +23,3 @@ align-items: center;
   margin-bottom: -1vh;
 }
 `
-
-/* .preloader_cotnainer_hesh {
-
-}
-.preloading,  .preloading div{
-
-  }
-  .preloading img {
-
-  }
-  .preloading div {
-    width: 90vw;
-    max-width: 500px;
-  }
- */

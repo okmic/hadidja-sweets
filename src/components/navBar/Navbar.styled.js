@@ -9,7 +9,7 @@ padding-right: 1em;
 height: 100%;
 position: fixed;
 top: 0;
-right: ${props => !props.active ? "-110%" : 0};
+right: ${props => !props.active ? "-110vw" : 0};
 transition: ${props => !props.active ? "750ms" : "350ms"};
 z-index: 1000;
 overflow-y: auto;
@@ -25,14 +25,4 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-`
-export const Toggle = styled.li`
-position: fixed;
-top: 5px;
-z-index: 1000;
-`
-export const ToggleItem = styled.span`
-font-size: 40px;
-background: none;
-cursor: pointer;
 `
