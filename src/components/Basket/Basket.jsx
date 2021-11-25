@@ -1,6 +1,7 @@
 import Icon from "../Icon/Icon"
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { Toggle, ToggleItem, Basement, Button, Buttons, Description, Item, Title, WrapperBasket } from "./Basket.styled"
+import { NavLink } from "react-router-dom";
 
 const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, showSidebar }) => <WrapperBasket>
   <Toggle>
@@ -26,7 +27,7 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, show
       </Description>
       <Buttons>
         <Button active={item.amount <= 1 && true} buttonSize={true} onClick={() => onRemoveBasket(item.id, item.amount)}>{item.amount <= 1 ? "Удалить" : "-"}</Button>
-        {item.amount}
+        <b>{item.amount}</b>
         <Button onClick={() => onAddedBasket(item.id)}>+</Button>
         <span>&#8381; {item.amount * item.price}</span>
       </Buttons>
@@ -35,7 +36,9 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, show
   {cartItems.length > 0
     ? <Basement>
       <h5>Итого: &#8381; {calculateTotal(cartItems).toFixed(2)}</h5>
-      <Button>Оформить заказ</Button>
+      <NavLink to="/To-Order">
+        <Button>Оформить заказ</Button>
+        </NavLink>
     </Basement>
     : null
   }

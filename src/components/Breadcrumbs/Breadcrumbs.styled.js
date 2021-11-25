@@ -14,13 +14,14 @@ align-items: start;
 }
 & ul a{
     padding-left: -40px;
-    color: #000;
+    color: #fff;
     font-style: italic;
     font-weight: 500;
+
 }
 & ul li a:hover{
     padding-left: -40px;
-    color:#00bfff;
+    color: #785627;
 }
 @media screen and (max-width: 500px) {
         display: none;
@@ -28,7 +29,7 @@ align-items: start;
 `
 
 export const BreadcrumbsActive = styled.li`
-color:#00bfff;
+color: #785627;
 font-style: italic;
 font-weight: bold;
 `

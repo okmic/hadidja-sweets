@@ -14,7 +14,7 @@ background-color: #3e220b;
 border-radius: 50%;
 color: #fff;
 transition: 0.3s;
-z-index: 1;
+z-index: 2;
 animation: scrollToTop 1s 1 forwards;
 &:hover {
     color: green;

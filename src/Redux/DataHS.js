@@ -4,6 +4,9 @@ import hadidja from '../img/hadidja.png'
 import v1 from '../video/VID_1.mp4';
 import v2 from '../video/VID_2.mp4';
 import v3 from '../video/VID_3.mp4';
+import i1 from '../img/img_vid_1.png';
+import i2 from '../img/img_vid_2.png';
+import i3 from '../img/img_vid_3.png';
 //products
 import img_1 from '../img/img_1.jpg'
 import img_2 from '../img/img_2.jpg'
@@ -33,17 +36,24 @@ export const initialState = {
     screen: {
         crown: crown,
         hadidja: hadidja,
-        v1: v1,
-        v2: v2,
-        v3: v3
+        video: {
+            v1: v1,
+            v2: v2,
+            v3: v3,
+            img: {
+                i1: i1,
+                i2: i2,
+                i3: i3
+            }
+        }
     },
     cartItems: [
     ],
     products: [
         {
             id: 1,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_1,
             price: 300,
@@ -52,8 +62,8 @@ export const initialState = {
         },
         {
             id: 2,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_2,
             price: 300,
@@ -62,8 +72,8 @@ export const initialState = {
         },
         {
             id: 3,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_3,
             price: 300,
@@ -72,8 +82,8 @@ export const initialState = {
         },
         {
             id: 4,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_4,
             price: 300,
@@ -82,8 +92,8 @@ export const initialState = {
         },
         {
             id: 5,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_5,
             price: 300,
@@ -92,8 +102,8 @@ export const initialState = {
         },
         {
             id: 6,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_6,
             price: 300,
@@ -102,8 +112,8 @@ export const initialState = {
         },
         {
             id: 7,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_7,
             price: 300,
@@ -112,8 +122,8 @@ export const initialState = {
         },
         {
             id: 8,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_8,
             price: 300,
@@ -122,8 +132,8 @@ export const initialState = {
         },
         {
             id: 9,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_9,
             price: 300,
@@ -132,8 +142,8 @@ export const initialState = {
         },
         {
             id: 10,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_10,
             price: 300,
@@ -142,8 +152,8 @@ export const initialState = {
         },
         {
             id: 11,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_11,
             price: 300,
@@ -152,8 +162,8 @@ export const initialState = {
         },
         {
             id: 12,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_12,
             price: 300,
@@ -162,8 +172,8 @@ export const initialState = {
         },
         {
             id: 13,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_13,
             price: 300,
@@ -172,8 +182,8 @@ export const initialState = {
         },
         {
             id: 14,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_14,
             price: 300,
@@ -182,8 +192,8 @@ export const initialState = {
         },
         {
             id: 15,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_15,
             price: 300,
@@ -192,8 +202,8 @@ export const initialState = {
         },
         {
             id: 16,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_16,
             price: 300,
@@ -202,8 +212,8 @@ export const initialState = {
         },
         {
             id: 17,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_17,
             price: 300,
@@ -212,8 +222,8 @@ export const initialState = {
         },
         {
             id: 18,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_18,
             price: 300,
@@ -222,8 +232,8 @@ export const initialState = {
         },
         {
             id: 19,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_19,
             price: 300,
@@ -232,7 +242,7 @@ export const initialState = {
         },
         {
             id: 20,
-            amount : 1,
+            amount: 1,
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_20,
@@ -242,8 +252,8 @@ export const initialState = {
         },
         {
             id: 21,
-            amount : 1,
-            category: "Lorem ipsum dolor", 
+            amount: 1,
+            category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_21,
             price: 300,

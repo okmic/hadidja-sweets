@@ -1,26 +1,15 @@
-import { Hadidja, Logo, Sourse, Video, VideoLarge, VideoMain, VideoSmall, WrapperHeader, WrapperVideo } from "./Header.styled";
+import { Hadidja, Logo, WrapperHeader} from "./Header.styled";
+import ScreenAny from "./ScreenAny"
+import ScreenIos from "./ScreenIos";
 
-const Header = ({ screen, showSidebar }) => <WrapperHeader   onClick={() => showSidebar(false)}>
+const Header = ({ screen, showSidebar, ios }) => <WrapperHeader   onClick={() => showSidebar(false)}>
       <Logo>
         <img src={screen.crown} alt='Hadidja sweets' />
       </Logo>
-      <WrapperVideo>
-        <Video>
-          <VideoSmall autoPlay loop muted controls='false'>
-            <Sourse src={screen.v2} type='video/mp4' />
-          </VideoSmall>
-        </Video>
-        <VideoMain>
-          <VideoLarge autoPlay loop muted controls='false'>
-            <Sourse src={screen.v1} type='video/mp4' />
-          </VideoLarge>
-        </VideoMain>
-        <Video>
-          <VideoSmall autoPlay loop muted controls='false'>
-            <Sourse src={screen.v3} type='video/mp4' />
-          </VideoSmall>
-        </Video>
-      </WrapperVideo>
+      {!ios  
+      ? <ScreenAny video={screen.video} />
+      : <ScreenIos video={screen.video.img} />
+      }
       <Hadidja>
         <img src={screen.hadidja} alt="Hadidja Sweets" />
       </Hadidja>

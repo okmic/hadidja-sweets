@@ -6,6 +6,7 @@ import Header from "../components/Header/Header"
 import Navbar from "../components/navBar/Navbar"
 import Preloading from "../components/Preloading/Preloading"
 import Products from "../components/Products/Products"
+import ScrollToTopAnimate from '../components/ScrollToTop/ScrollToTopAnimate'
 
 const Wrapper = styled.div`
 opacity: 0;
@@ -27,13 +28,15 @@ const Home = (props) => {
   useEffect(() =>{
       setTimeout(() => {
           setLoading(false)
-      }, 2500)
+      }, 2700)
   }, [loading])
 
 return <>
     <Preloading active={loading} crown={props.screen.crown} />
     <Wrapper>
+    <ScrollToTopAnimate />
     <Header 
+    ios={props.ios}
     showSidebar={props.setSidebar}
     screen={props.screen} />
     <Navbar 

@@ -22,7 +22,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 `
-export const Video = styled.div`
+export const Item = styled.div`
 margin: 0 9px;
 border: #8d834b 3px solid;
 box-shadow: 3px 3px 3px 3px #8d834b23;
@@ -35,7 +35,7 @@ align-items: center;
     display: none;
 }
 `
-export const VideoMain = styled.div`
+export const Main = styled.div`
 margin: 0 9px;
 border: #8d834b 3px solid;
 box-shadow: 3px 3px 3px 3px #8d834b23;
@@ -56,6 +56,19 @@ position: relative;
 height: 45vh;
 `
 export const VideoLarge = styled.video`
+position: relative;
+height: 65vh;
+@media screen and (max-width: 750px){
+    max-width: 100vw;
+    min-height: 50vh;
+    border: #8d834b 1px solid;
+}
+`
+export const ImgSmall = styled.img`
+position: relative;
+height: 45vh;
+`
+export const ImgLarge = styled.img`
 position: relative;
 height: 65vh;
 @media screen and (max-width: 750px){

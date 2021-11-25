@@ -3,13 +3,18 @@ import { connect } from 'react-redux';
 import Home from './Screens/Home';
 import Contacts from './components/Contacts/Contacts';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ScrollToTopAnimate from './components/ScrollToTop/ScrollToTopAnimate';
 import { addBasket, deleteBasket, removeBasket, sendBasket } from './Redux/hadidjaReducer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AppWrapper } from './App.styled';
 import NotFound from './components/NotFound/NotFound';
+import FormBasketContainer from './components/Basket/FormBasket/FormBasketContainer';
 
 const App = (props) => {
+  useEffect(() => {
+    if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+      setIos(true)
+  }}, [])
+  const [ios, setIos] = useState(false)
 
   const onClickButtonProduct = (id, image, title, price, amount, buttonActive) => {
     props.dispatch(sendBasket(id, image, title, price, amount, buttonActive))
@@ -37,12 +42,12 @@ const App = (props) => {
 
   return (
  <HashRouter >
-      <ScrollToTop />
-      <ScrollToTopAnimate />
       <AppWrapper>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={
-            <Home             
+            <Home
+              ios={ios}           
               screen={props.hadidjaReducer.screen}
               products={props.hadidjaReducer.products}
               cartItems={props.hadidjaReducer.cartItems}
@@ -55,6 +60,9 @@ const App = (props) => {
               setSidebar={setSidebar}
             />} />
           <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/To-Order" element={<FormBasketContainer
+          calculateTotal={calculateTotal}
+          cartItems={props.hadidjaReducer.cartItems} />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </AppWrapper>
@@ -66,6 +74,5 @@ const mapStateToProps = (state) => {
     hadidjaReducer: state.hadidjaReducer
   }
 }
-
 
 export default connect(mapStateToProps)(App);

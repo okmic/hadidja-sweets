@@ -25,6 +25,7 @@ export const Title = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 1.5em;
 `
 export const Item = styled.div`
 display: flex;
@@ -35,7 +36,8 @@ background-color: #ffffff96;
 border: 1px solid #fff;
 border-radius: 15px;
 color: #000;
-max-width: 100%;
+width: 100%;
+max-width: 350px;
 box-shadow: 5px 5px 5px 5px rgba(43, 37, 37, 0.366);
 text-shadow: 1px 1px 1px red;
 overflow: hidden;
@@ -49,12 +51,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin: 7px 0;
+& b {
+    font-size: 27px;
+    margin-bottom: 9px;
+}
 `
 export const Buttons = styled.div`
 display: flex;
 flex-wrap: wrap;
-max-width: 90%;
-justify-content: space-evenly;
+justify-content: space-between;
+align-items: center;
 & span {
     min-width: 30%;
 }
@@ -67,6 +73,8 @@ border-color: ${ props => props.active === true ? "red" : "#bbbbbb"};
 border-radius: 9px;
 min-width: 50px;
 transition: 0.5s;
+font-size: 19px;
+margin: 3px;
 &:hover {
     background-color: ${ props => props.active === true ? "red" : "green"};
     border-color: ${ props => props.active === true ? "red" : "green"};
@@ -81,7 +89,7 @@ justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 & button {
-    padding: 1em 3em;
+    padding: 11px;
 }
 
 `

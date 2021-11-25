@@ -54,7 +54,6 @@ export const ProductButton = styled.div`
  font-family: cursive;
 &:hover {
     background-color: green;
-    transition: 0.3s;
     transition: 0.5s;
 }
 `

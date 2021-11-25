@@ -1,13 +1,22 @@
-import ReactLoading from 'react-loading';
+
 import { PreloadingItem, WrapperPreloading } from './Preloading.styled';
 
-let Preloading = ({crown, active}) => <WrapperPreloading active={active}>
+import './preloader.css'
+
+let Preloading = ({crown, active}) =>  {
+    return(
+        
+            <WrapperPreloading active={active}>
             <PreloadingItem>
                 <img src={crown} alt={crown} />
-                <PreloadingItem>
-                    <ReactLoading type={"bars"} color={'#fff'} height={"100%"} width={"30%"} />
-                </PreloadingItem>
+                <div className="preloader">
+                    <div className="bollOne"></div>
+                    <div className="bollTwo"></div>
+                    <div className="bollThree"></div>
+                </div>
             </PreloadingItem>
         </WrapperPreloading>
+    )
+}
 
 export default Preloading

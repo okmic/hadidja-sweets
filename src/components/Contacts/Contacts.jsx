@@ -33,11 +33,11 @@ const Contacts = () => <WrapperContacts>
         </DescriptionEnd>
         <Iframe>
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afbf9235ac21d1469bcd8cade3e1a80d5ee7ccdacc2f03c0999c04a02baedad0b&amp;source=constructor"
-                width="100%" height="100%" title="address"
-            ></iframe>
+                width="100%" height="100%" title="address" ></iframe>
         </Iframe>
         <Social />
     </Contact>
 </WrapperContacts>
+
 export default Contacts
 

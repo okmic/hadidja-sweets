@@ -13,7 +13,7 @@ const Products = ({products, onClickButtonProduct, showSidebar}) =>  <WrapperPro
             </ProductDescription>
             {!item.buttonActive
             ?   <ProductButton onClick={() => onClickButtonProduct(item.id, item.image, item.title, item.price, item.amount, item.buttonActive)}>
-                    <p>В корзину </p>
+                    <p>В корзину</p>
             </ProductButton>
             :   <ProductButton activeButton={true} >
                     <BsCartCheckFill />
