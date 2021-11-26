@@ -1,10 +1,12 @@
 import { Product, ProductButton, ProductDescription, ProductImg, WrapperProducts } from "./Products.styled"
 import {BsCartCheckFill} from 'react-icons/bs'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { memo } from "react"
 
 const Products = ({products, onClickButtonProduct, showSidebar}) =>  <WrapperProducts onClick={() => showSidebar(false)}>
         {products && products.map(item => <Product key={item.id}>
             <ProductImg>
-            <img src={item.image} alt={item.image} />
+            <LazyLoadImage src={item.image} alt={item.image} />
             </ProductImg>
             <ProductDescription> 
             <h3>{item.title}</h3>
@@ -24,4 +26,4 @@ const Products = ({products, onClickButtonProduct, showSidebar}) =>  <WrapperPro
         }
     </WrapperProducts>
 
-export default Products
+export default memo(Products)

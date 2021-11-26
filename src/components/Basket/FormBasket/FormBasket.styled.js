@@ -8,7 +8,6 @@ align-items: center;
 min-height: 100vh;
 width: 100%;
 background-color: green;
-padding-bottom: 3em;
 `
 export const ButtonFormBasket = styled.div`
 position: fixed;
@@ -26,41 +25,9 @@ z-index: 1;
     background-color: #790604;
     transition: 0.5s;
 }
-
-`
-export const WrapperItemsBasket = styled.div`
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-background-color: green;
-margin-top: 3em;
-`
-export const ItemForm = styled.div`
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-margin: 1em;
-padding: 1em;
-background-color: #ffffff96;
-border: 1px solid #fff;
-border-radius: 15px;
-color: #000;
-max-width: 100%;
-box-shadow: 5px 5px 5px 5px rgba(43, 37, 37, 0.366);
-text-shadow: 1px 1px 1px red;
-overflow: hidden;
-& img {
-    max-height: 150px;
-    border: red 1px solid;
-    border-radius: 9px;
-    margin-right: 1em;
-}
-@media screen and (max-width: 470px) {
-    justify-content: center;
-}
 `
 export const FormWrapper = styled.div`
+margin-top: 3em;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -69,7 +36,7 @@ width: 100%;
 background-color: green;
 & h3 {
     color: #fff
-}
+};
 `
 
 export const FormLabel = styled.div`
@@ -78,6 +45,9 @@ flex-direction: column;
 align-items: flex-start;
 margin: 0 0 9px 5px;
 color: #fff;
+transform: translateX(-30%);
+opacity: 0;
+animation: form 0.7s linear ${props => props.delay} 1 forwards;
 & input, button {
     padding: 1em;
     border: none;
@@ -95,5 +65,15 @@ color: #fff;
 & button:hover {
     background-color: #790604;
     transition: 0.5s;
+}
+@keyframes form {
+    0%{
+        transform: translateX(-30vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 `

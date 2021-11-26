@@ -22,7 +22,6 @@ animation: home 1s ease-in 2.5s 1 forwards ;
 `
 
 const Home = (props) => {
-
   const [loading, setLoading] = useState(true)
 
   useEffect(() =>{
@@ -41,11 +40,13 @@ return <>
     screen={props.screen} />
     <Navbar 
     cartItems={props.cartItems}
+    deleteItemBasket={props.deleteItemBasket}
     onAddedBasket={props.onAddedBasket} 
     onRemoveBasket={props.onRemoveBasket}
     calculateTotal={props.calculateTotal}
     sidebar={props.sidebar}
     showSidebar={props.showSidebar}
+    inputBasket={props.inputBasket}
     />
     <Products 
     showSidebar={props.setSidebar}

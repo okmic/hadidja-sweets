@@ -3,7 +3,7 @@ import Basket from '../Basket/Basket';
 import { ItemNav, WrapperNav } from './Navbar.styled';
 
 
-const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sidebar, showSidebar, setSidebar}) => <>
+const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sidebar, showSidebar, deleteItemBasket, inputBasket}) => <>
       <Menu 
       items={cartItems.length} 
       showSidebar={showSidebar}
@@ -12,10 +12,12 @@ const Navbar = ({cartItems, onAddedBasket, onRemoveBasket, calculateTotal, sideb
         <ItemNav>
           <Basket 
           showSidebar={showSidebar}
-          cartItems={cartItems} 
+          cartItems={cartItems}
+          deleteItemBasket={deleteItemBasket}
           onAddedBasket={onAddedBasket}
           onRemoveBasket={onRemoveBasket}
           calculateTotal={calculateTotal}
+          inputBasket={inputBasket}
           />
         </ItemNav>
       </WrapperNav>

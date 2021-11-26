@@ -23,3 +23,22 @@ align-items: center;
   margin-bottom: -1vh;
 }
 `
+export const BallsContainer = styled.div`
+margin-top: 1em;
+width: 100%;
+display: flex;
+justify-content: center;
+`
+export const Ball = styled.div`
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: #fff 1px solid;
+background-color: ${ props => props.color ? props.color : "aquamarine"};
+transform: scale(1);
+animation: ball 1s linear ${ props => props.time ? props.time : ""} infinite forwards;
+@keyframes ball {
+  0%{transform: scale(1);}
+  100%{transform: scale(0);}
+}
+`

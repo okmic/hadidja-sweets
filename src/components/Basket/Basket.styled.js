@@ -16,6 +16,7 @@ min-width: 100%;
 position: fixed;
 display: flex;
 justify-content: flex-start;
+z-index: 1;
 `
 export const ToggleItem = styled.span`
 font-size: 40px;
@@ -28,6 +29,7 @@ align-items: center;
 margin-top: 1.5em;
 `
 export const Item = styled.div`
+position: relative;
 display: flex;
 flex-direction: column;
 margin: 1em 0;
@@ -46,6 +48,11 @@ overflow: hidden;
     border-radius: 9px;
 }
 `
+export const Close = styled.div`
+position: absolute;
+right: 1em;
+top: 1em;
+`
 export const Description = styled.div`
 display: flex;
 flex-direction: column;
@@ -63,6 +70,17 @@ justify-content: space-between;
 align-items: center;
 & span {
     min-width: 30%;
+}
+`
+export const Input = styled.div`
+max-width: 55px;
+& input {
+    max-width: 100%;
+    border: none;
+    background: none;
+    text-shadow: 1px 1px 1px red;
+    font-size: 17px;
+    text-align: center;
 }
 `
 export const Button = styled.button`

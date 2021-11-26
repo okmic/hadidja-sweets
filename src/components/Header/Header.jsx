@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Hadidja, Logo, WrapperHeader} from "./Header.styled";
 import ScreenAny from "./ScreenAny"
 import ScreenIos from "./ScreenIos";
@@ -15,4 +16,4 @@ const Header = ({ screen, showSidebar, ios }) => <WrapperHeader   onClick={() =>
       </Hadidja>
     </WrapperHeader>
 
-export default Header
+export default memo(Header)
