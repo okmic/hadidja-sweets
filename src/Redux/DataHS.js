@@ -56,7 +56,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_1,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -66,7 +66,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_2,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -76,7 +76,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_3,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -86,7 +86,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_4,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -96,7 +96,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_5,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -106,7 +106,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_6,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -116,7 +116,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_7,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -126,7 +126,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_8,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -136,7 +136,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_9,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -146,7 +146,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_10,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -156,7 +156,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_11,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -166,7 +166,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_12,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -176,7 +176,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_13,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -186,7 +186,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_14,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -196,7 +196,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_15,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -206,7 +206,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_16,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -216,7 +216,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_17,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -226,7 +226,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_18,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -236,7 +236,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_19,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -246,7 +246,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_20,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         },
@@ -256,7 +256,7 @@ export const initialState = {
             category: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             image: img_21,
-            price: 300,
+            price: 80,
             title: "Lorem ipsum dolor",
             buttonActive: false
         }

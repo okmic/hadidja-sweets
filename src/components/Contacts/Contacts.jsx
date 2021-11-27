@@ -23,8 +23,8 @@ const Contacts = () => <WrapperContacts>
         </Description>
         <Description>
             <h5>ЗВОНИТЕ</h5>
-            <a href="tel:+79965248184">
-                <h6>+7 988 988-98-98</h6>
+            <a href="tel:+79380332247">
+                <h6>+7(938)033-22-47</h6>
             </a>
         </Description>
         <DescriptionEnd>

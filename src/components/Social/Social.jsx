@@ -15,7 +15,7 @@ justify-content: space-evenly;
 
 const Social = ({activePhone}) => <Wrapper>
     {activePhone && <Icon IconR={FiPhoneCall} color="#075E54" nav="/Contacts" />}
-    <Icon IconR={BsWhatsapp} color="#075E54" a="https://bit.ly/3oHXWxU" />
+    <Icon IconR={BsWhatsapp} color="#075E54" a="https://wa.me/79380332247" />
     <Icon IconR={AiFillInstagram} color="#3f729b" a="https://www.instagram.com/?hl=ru" />
     <Icon IconR={BsFacebook} color="#3b5998" a="https://ru-ru.facebook.com/" />
     <Icon IconR={TiSocialTwitter} color="#55acee" a="https://twitter.com/?lang=ru" />
