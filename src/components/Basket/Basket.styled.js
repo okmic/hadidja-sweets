@@ -66,7 +66,7 @@ margin: 7px 0;
 export const Buttons = styled.div`
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 & span {
     min-width: 30%;

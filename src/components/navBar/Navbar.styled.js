@@ -27,7 +27,6 @@ export const ItemNav =  styled.ul`
 padding-left: 1.5em;
 width: 100%;
 display: flex;
-min-height: 150vh;
 flex-direction: column;
 align-items: flex-start;
 `
