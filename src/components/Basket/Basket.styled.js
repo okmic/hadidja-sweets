@@ -12,11 +12,12 @@ text-shadow: 1px 1px 1px #000;
 }
 `
 export const Toggle = styled.li`
-min-width: 100%;
+max-width: 100%;
 position: fixed;
 display: flex;
 justify-content: flex-start;
 z-index: 1;
+
 `
 export const ToggleItem = styled.span`
 font-size: 40px;
