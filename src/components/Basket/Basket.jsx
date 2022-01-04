@@ -16,8 +16,8 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, show
     </ToggleItem>
   </Toggle>
   <Title>
-    <h3>Ваша Корзина</h3>
-    {cartItems.length === 0 ? <h5>В корзине нет товаров</h5> : null}
+    <h3>Your Cart</h3>
+    {cartItems.length === 0 ? <h5>There are no items in your cart.</h5> : null}
   </Title>
   {cartItems.map(item => (
     <Item
@@ -44,9 +44,9 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, show
   ))}
   {cartItems.length > 0
     ? <Basement>
-      <h5>Итого: &#8381; {calculateTotal(cartItems).toFixed(2)}</h5>
+      <h5>Total: $ {calculateTotal(cartItems).toFixed(2)}</h5>
       <NavLink to="/To-Order">
-        <Button>Оформить заказ</Button>
+        <Button>To order</Button>
         </NavLink>
     </Basement>
     : null

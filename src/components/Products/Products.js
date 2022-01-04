@@ -11,11 +11,11 @@ const Products = ({products, onClickButtonProduct, showSidebar}) =>  <WrapperPro
             <ProductDescription> 
             <h3>{item.title}</h3>
             <h5>{item.description}</h5>
-            <h2>{item.price} &#8381;</h2>
+            <h2>{item.price} $</h2>
             </ProductDescription>
             {!item.buttonActive
             ?   <ProductButton onClick={() => onClickButtonProduct(item.id, item.image, item.title, item.price, item.amount, item.buttonActive)}>
-                    <p>В корзину</p>
+                    <p>Add to Cart</p>
             </ProductButton>
             :   <ProductButton activeButton={true} >
                     <BsCartCheckFill />

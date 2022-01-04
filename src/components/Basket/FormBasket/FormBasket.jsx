@@ -8,24 +8,24 @@ let FormBasket = (props) => {
         <WrapperFormBasket>
             <ButtonFormBasket>
                 <NavLink to="/">
-                    <button>Вернуться назад</button>
+                    <button>Сome back</button>
                 </NavLink>
             </ButtonFormBasket>
             <FormWrapper>
                 <Title>
-                    <h3>Итого: &#8381; {props.calculateTotal(props.cartItems).toFixed(2)}</h3>
+                    <h3>Total: $ {props.calculateTotal(props.cartItems).toFixed(2)}</h3>
                 </Title>
                 <form>
                     <FormLabel>
-                        <b>Ваше Имя:</b>
-                        <input type="text" placeholder="Иван" value={props.name} onChange={props.handleNameChanged} />
+                        <b>Your name:</b>
+                        <input type="text" placeholder="Your name" value={props.name} onChange={props.handleNameChanged} />
                     </FormLabel>
                     <FormLabel delay="0.5s">
-                        <b>Ваш номер телефона:</b>
+                        <b>Your phone:</b>
                         <input id="name" type="tel" placeholder="+7(988)888-88-88" value={props.phone} onChange={props.handlePfoneChanged} />
                     </FormLabel>
                     <FormLabel delay="1s">
-                        <button className="button" onClick={() => props.handleButton(props.name, props.surname, props.phone, props.email)}>Заказать</button>
+                        <button className="button" onClick={() => props.handleButton(props.name, props.surname, props.phone, props.email)}>To order</button>
                     </FormLabel>
                 </form>
             </FormWrapper>
