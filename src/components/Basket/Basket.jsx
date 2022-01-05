@@ -35,10 +35,10 @@ const Basket = ({ cartItems, onAddedBasket, onRemoveBasket, calculateTotal, show
         {item.title}
       </Description>
       <Buttons>
-        <Button active={item.amount <= 1 && true} buttonSize={true} onClick={() => onRemoveBasket(item.id, item.amount)}>{item.amount <= 1 ? "Удалить" : "-"}</Button>
+        <Button active={item.amount <= 1 && true} buttonSize={true} onClick={() => onRemoveBasket(item.id, item.amount)}>{item.amount <= 1 ? "Delete" : "-"}</Button>
         <InputBasket id={item.id} amount={item.amount} inputBasket={inputBasket} />
         <Button onClick={() => onAddedBasket(item.id)}>+</Button>
-        <span>&#8381; {item.amount * item.price}</span>
+        <span> $ {item.amount * item.price}</span>
       </Buttons>
     </Item>
   ))}
