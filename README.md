@@ -1,15 +1,1 @@
-# Used libraries
-
-### "react": "^17.0.2"
-###    "react-dom": "^17.0.2"
-###    "react-icons": "^4.3.1"
-###    "react-lazy-load-image-component": "^1.5.1"
-###    "react-loading": "^2.0.3"
-###    "react-redux": "^7.2.6"
-###    "react-router-dom": "^6.0.2"
-###    "react-scripts": "4.0.3"
-###    "react-use": "^17.3.1"
-###    "redux": "^4.1.2"
-###    "redux-thunk": "^2.4.0"
-###   "styled-components": "^5.3.3"
-###   "web-vitals": "^1.0.1"
+### https://okmic.github.io/hadidja-sweets/
